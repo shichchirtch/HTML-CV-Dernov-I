@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.container{
+padding-top:30px;
+}
+/* Box Model*/
+.container{
+max-width: 75%;
+margin:auto;
+}
+body{
+background-color: lavenderblush;
+}
+
+.avatar{
+width: 300px;
+border-radius:25px;
+box-shadow: -8px -3px 24px rgba(0,0,0,0.65);
+margin-top: 10px;
+margin-bottom: 100px;
+}
+.presentation{
+line-height: 15px;
+padding-top:5px;
+}
+.presentation h1{
+padding-top:10px;
+}
+
+.presentation{
+margin-left:80px;
+}
+
+a{
+color:black;
+text-decoration: None;
+}
+a:hover{
+text-decoration: underline;
+}
+a:active{
+color:blue;
+}
+a:visited{
+color:grey;
+}
+.card{
+padding: 15px 20px;
+margin-bottom: 20px;
+border-radius:20px;
+}
+.bg-yellow{
+background:lemonchiffon;
+}
+.bg-green{
+background:palegreen;
+}
+.bg-red{
+background: #f5deb3;
+}
+/*  Формирование  изменяющегося поведения карточек и текста в зависимости от размеров окна */
+.info{
+margin-bottom: 10px;
+display:flex;
+}
+/*  */
+/* Адаптация под разные размеры экранов, для телефона например */
+@media (max-width:700px) {
+    .info{
+    text-align:center;
+    display:block;
+    }
+}
+
+
+.info p {
+color: #00898f;
+margin:10;
+font-size:1.2rem;
+font-style: italic;
+font-weight: bold;
+line-height: 27px;
+}
+
+.info h1{
+font-size : 40px;
+font-style: italic;
+font-weight: bold;
+line-height: 40px;
+}
+/*____________________________________________________________________________*/
+
+.my_hobby{
+line-height: 0px;
+}
+.list{
+padding:2px 1px 1px 20px;
+list-style:none;
+}
+.list li{
+color: #86898f;
+}
+/* Работа с таблицами */
+.table td {
+padding-bottom:10px;
+}
+/*  nth-child(1) - работа с первой колонкой */
+.table td:nth-child(1){
+padding-left:30px;
+padding-right:30px;
+}
+/*  nth-child(1) - работа со второй колонкой */
+.table td:nth-child(2){
+color:mediumpurple;
+padding:20px;
+padding-left:30px;
+padding-right:30px;
+font-size:1.3rem;
+}
+
+.table td:nth-child(3){
+padding-left:30px;
+padding-right:30px;
+font-weight:bold;
+ font-size:1.3rem;
+}
+/*  работа со строками нечётными- odd, чётными- even */
+.table tr:nth-child(odd){
+background:lightgreen;
+}
+.bg-red a{
+font-size:1.2rem;
+}
+.contact h2{
+text-align: center;
+}
+
+.form-group label{
+display:block;
+text-size:14px;
+color:grey;
+padding: 15px 0px 10px 5px;
+}
+
+/*  работа одновременно с двумя блоками
+ border-bottom:1px solid #ccc; - эта строка означает - подчеркнуть чертой 1 рх
+ outline:none; - обводки нет
+ */
+.form-group input,
+.form-group textarea
+{
+color: red;
+width:60%;
+border:none;
+border-bottom:1px solid #ccc;
+padding: 15px 0px 10px 5px;
+color:#000;
+outline:none;
+font-family:inherit;
+}
+/*  работа с кнопкой  */
+.knopka{
+cursor:pointer;
+font-family:inherit;
+padding:10px 15px;
+font-size:15px;
+}
+/*  работа с кнопкой  уменьшение насыщенности в 2 раза */
+.knopka:hover{
+opasity:0.5;
+}
